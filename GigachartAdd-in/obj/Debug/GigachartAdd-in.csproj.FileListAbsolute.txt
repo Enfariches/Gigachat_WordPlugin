@@ -1,0 +1,15 @@
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\GigachartAdd-in.dll
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\GigachartAdd-in.pdb
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\GigachartAdd-in.dll.manifest
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\GigachartAdd-in.vsto
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\Xceed.Document.NET.dll
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\Xceed.Words.NET.dll
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd-in.csproj.AssemblyReference.cache
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd_in.Properties.Resources.resources
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd-in.csproj.GenerateResource.cache
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd-in.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\Gigachar.B4348E96.Up2Date
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd-in.dll
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd-in.pdb
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd_in.Form1.resources
