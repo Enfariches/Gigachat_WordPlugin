@@ -41,7 +41,7 @@ namespace GigachartAdd_in
         {
         }
 
-        public void GetButtonID(Office.IRibbonControl control)
+        public void GetButton(Office.IRibbonControl control) //Обработка кнопки Gigachat из контекстного меню (Ribbon2.xml)
         {
             Gigachat form = new Gigachat();
 
@@ -67,6 +67,13 @@ namespace GigachartAdd_in
 
             form.Show();
         }
+
+        public void GetButton2(Office.IRibbonControl control)
+        {
+            MessageBox.Show("In development...");
+        }
+
+
 
         #region Элементы IRibbonExtensibility
 
