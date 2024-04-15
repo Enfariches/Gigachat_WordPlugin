@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 using System.Drawing;
+using Microsoft.Office.Interop.Word;
+using RestSharp;
 
 // TODO:  Выполните эти шаги, чтобы активировать элемент XML ленты:
 
@@ -41,10 +43,29 @@ namespace GigachartAdd_in
 
         public void GetButtonID(Office.IRibbonControl control)
         {
-            Form1 form = new Form1();
+            Gigachat form = new Gigachat();
+
+            Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
+            if (currentRange.StoryLength != 1)
+            {
+                currentRange.Copy();
+            }
+            else
+            {
+                Clipboard.SetText("Nothing to paste");
+            }
+            
+            Label mylab = new Label();
+            mylab.Text = Clipboard.GetText();
+            Clipboard.Clear();
+
+            mylab.Location = new System.Drawing.Point(222, 90);
+            mylab.AutoSize = true;
+            mylab.Font = new System.Drawing.Font("Calibri", 30);
+
+            form.Controls.Add(mylab);
+
             form.Show();
-            Microsoft.Office.Interop.Word.Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            currentRange.Text = "Текст создан контекстным меню";
         }
 
         #region Элементы IRibbonExtensibility
