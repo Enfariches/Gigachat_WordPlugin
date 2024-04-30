@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
-using System.Drawing;
 using Microsoft.Office.Interop.Word;
-using RestSharp;
+using static GlobalsKey;
+using static System.Net.Mime.MediaTypeNames;
+
 
 // TODO:  Выполните эти шаги, чтобы активировать элемент XML ленты:
 
@@ -30,41 +28,37 @@ using RestSharp;
 // Дополнительные сведения можно найти в XML-документации для ленты в справке набора средств Visual Studio для Office.
 
 
+
 namespace GigachartAdd_in
 {
     [ComVisible(true)]
     public class Ribbon2 : Office.IRibbonExtensibility
     {
         private Office.IRibbonUI ribbon;
+        readonly GigaChatClass gigaChatApi = new GigaChatClass(secretKey);
 
         public Ribbon2()
         {
         }
 
-        public void GetButton(Office.IRibbonControl control) //Обработка кнопки Gigachat из контекстного меню (Ribbon2.xml)
+        public async void GetButton(Office.IRibbonControl control)
         {
-            Gigachat form = new Gigachat();
+            GigachatChatForm form = new GigachatChatForm();
 
-            Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength != 1)
+            if (secretKey == null)
             {
-                currentRange.Copy();
+                string docPath =
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                try
+                {
+                    using StreamReader reader = new StreamReader(Path.Combine(docPath, "secretKey.txt"));
+                    secretKey = reader.ReadToEnd();
+                }
+                catch 
+                {
+
+                }
             }
-            else
-            {
-                Clipboard.SetText("Nothing to paste");
-            }
-            
-            Label mylab = new Label();
-            mylab.Text = Clipboard.GetText();
-            Clipboard.Clear();
-
-            mylab.Location = new System.Drawing.Point(222, 90);
-            mylab.AutoSize = true;
-            mylab.Font = new System.Drawing.Font("Calibri", 30);
-
-            form.Controls.Add(mylab);
-
             form.Show();
         }
 
@@ -73,6 +67,59 @@ namespace GigachartAdd_in
             MessageBox.Show("In development...");
         }
 
+        public void GetButtonKey(Office.IRibbonControl control)
+        {
+            KeyForm testDialog = new KeyForm();
+            testDialog.Show();
+        }
+        // TODO
+        public async void GetButtonConclusion(Office.IRibbonControl control)
+        {
+            Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
+            if (currentRange.StoryLength > 0)
+            {
+
+
+                var response = await gigaChatApi.CompletionsAsync(Clipboard.GetText());
+
+
+                Range rangeToPaste = Globals.ThisAddIn.Application.Selection.Range;
+                // prompt to enum/const
+                rangeToPaste.Text = "Сделай краткий вывод по этому тексту " + response.choices[0].message.content;
+            }
+            else
+            {
+                MessageBox.Show("Ошибка!");
+            }
+        }
+
+        public void GetButtonReduce(Office.IRibbonControl control)
+        {
+            Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
+            if (currentRange.StoryLength > 0)
+            {
+                currentRange.Copy();
+            }
+            else
+            {
+                Clipboard.SetText("Nothing to paste");
+            }
+            Clipboard.Clear();
+        }
+
+        public void GetButtonContinue(Office.IRibbonControl control)
+        {
+            Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
+            if (currentRange.StoryLength > 0)
+            {
+                currentRange.Copy();
+            }
+            else
+            {
+                Clipboard.SetText("Nothing to paste");
+            }
+            Clipboard.Clear();
+        }
 
 
         #region Элементы IRibbonExtensibility
