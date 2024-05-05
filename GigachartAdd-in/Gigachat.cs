@@ -24,6 +24,7 @@ namespace GigachartAdd_in
             }
             catch
             {
+
             }
             Clipboard.Clear();
         }
@@ -47,7 +48,6 @@ namespace GigachartAdd_in
             TextBox textBoxChat = (TextBox)Controls.Find("textBox1", true)[0];     
             string text = textBoxChat.Text;
 
-            GigaChatClass gigaChatApi = new GigaChatClass(secretKey);
 
             var response = await gigaChatApi.CompletionsAsync(text);
             MessageBox.Show(response.choices[0].message.content);

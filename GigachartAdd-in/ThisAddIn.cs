@@ -8,6 +8,7 @@ using Office = Microsoft.Office.Core;
 using Microsoft.Office.Tools.Word;
 using Microsoft.Office.Core;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GigachartAdd_in
 {
@@ -15,7 +16,20 @@ namespace GigachartAdd_in
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+            if(GlobalsKey.secretKey == null)
+            {
+                string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                try
+                {
+                    using StreamReader reader = new StreamReader(Path.Combine(docPath, "secretKey.txt"));
+                    GlobalsKey.secretKey = reader.ReadToEnd();
+                    GlobalsKey.gigaChatApi = new GigaChatClass(GlobalsKey.secretKey);
+                }
+                catch
+                {
 
+                }
+            }
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

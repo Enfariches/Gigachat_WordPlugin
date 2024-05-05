@@ -40,6 +40,8 @@ namespace GigachartAdd_in
 
             using StreamWriter outfile = new StreamWriter(Path.Combine(docPath, "secretKey.txt"));
             outfile.Write(secretKey);
+            MessageBox.Show("secretKey.txt успешно сохранен в " + docPath);
+            gigaChatApi = new GigaChatClass(secretKey);
         }
 
         private void textBoxKey_TextChanged(object sender, EventArgs e)

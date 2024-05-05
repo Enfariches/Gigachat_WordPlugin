@@ -35,31 +35,24 @@ namespace GigachartAdd_in
     public class Ribbon2 : Office.IRibbonExtensibility
     {
         private Office.IRibbonUI ribbon;
-        readonly GigaChatClass gigaChatApi = new GigaChatClass(secretKey);
+
 
         public Ribbon2()
         {
+
         }
 
         public async void GetButton(Office.IRibbonControl control)
         {
-            GigachatChatForm form = new GigachatChatForm();
-
-            if (secretKey == null)
+            if (secretKey != null)
             {
-                string docPath =
-                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-                try
-                {
-                    using StreamReader reader = new StreamReader(Path.Combine(docPath, "secretKey.txt"));
-                    secretKey = reader.ReadToEnd();
-                }
-                catch 
-                {
-
-                }
+                GigachatChatForm form = new GigachatChatForm();
+                form.Show();
             }
-            form.Show();
+            else
+            {
+                MessageBox.Show("Необходимо вставить ключ Gigachat");
+            }
         }
 
         public void GetButton2(Office.IRibbonControl control)
@@ -76,49 +69,46 @@ namespace GigachartAdd_in
         public async void GetButtonConclusion(Office.IRibbonControl control)
         {
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength > 0)
-            {
-
-
-                var response = await gigaChatApi.CompletionsAsync(Clipboard.GetText());
-
-
-                Range rangeToPaste = Globals.ThisAddIn.Application.Selection.Range;
-                // prompt to enum/const
-                rangeToPaste.Text = "Сделай краткий вывод по этому тексту " + response.choices[0].message.content;
+            if (currentRange.StoryLength > 0 && secretKey != null)
+            { 
+                    string text = "Сделай краткий вывод по этому тексту: " + currentRange.Text;
+                    var response = await gigaChatApi.CompletionsAsync(text);
+                    currentRange.InsertAfter("\n" + response.choices[0].message.content); 
             }
             else
             {
-                MessageBox.Show("Ошибка!");
+                MessageBox.Show("Выделенная область пуста или нет ключа Gigachat");
             }
         }
 
-        public void GetButtonReduce(Office.IRibbonControl control)
+        public async void GetButtonReduce(Office.IRibbonControl control)
         {
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength > 0)
+            if (currentRange.StoryLength > 0 && secretKey != null)
             {
-                currentRange.Copy();
+                string text = "Сократи этот текст: " + currentRange.Text;
+                var response = await gigaChatApi.CompletionsAsync(text);
+                currentRange.InsertAfter("\n" + response.choices[0].message.content);
             }
             else
             {
-                Clipboard.SetText("Nothing to paste");
+                MessageBox.Show("Выделенная область пуста или нет ключа Gigachat");
             }
-            Clipboard.Clear();
         }
 
-        public void GetButtonContinue(Office.IRibbonControl control)
+        public async void GetButtonContinue(Office.IRibbonControl control)
         {
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength > 0)
+            if (currentRange.StoryLength > 0 && secretKey != null)
             {
-                currentRange.Copy();
+                string text = "Продолжи этот текст: " + currentRange.Text;
+                var response = await gigaChatApi.CompletionsAsync(text);
+                currentRange.InsertAfter("\n" + response.choices[0].message.content);
             }
             else
             {
-                Clipboard.SetText("Nothing to paste");
+                MessageBox.Show("Выделенная область пуста или нет ключа Gigachat");
             }
-            Clipboard.Clear();
         }
 
 
