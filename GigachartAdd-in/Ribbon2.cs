@@ -55,11 +55,6 @@ namespace GigachartAdd_in
             }
         }
 
-        public void GetButton2(Office.IRibbonControl control)
-        {
-            MessageBox.Show("In development...");
-        }
-
         public void GetButtonKey(Office.IRibbonControl control)
         {
             KeyForm testDialog = new KeyForm();
@@ -73,7 +68,7 @@ namespace GigachartAdd_in
             { 
                     string text = "Сделай краткий вывод по этому тексту: " + currentRange.Text;
                     var response = await gigaChatApi.CompletionsAsync(text);
-                    currentRange.InsertAfter("\n" + response.choices[0].message.content); 
+                    currentRange.Text = response.choices[0].message.content; 
             }
             else
             {
@@ -88,7 +83,7 @@ namespace GigachartAdd_in
             {
                 string text = "Сократи этот текст: " + currentRange.Text;
                 var response = await gigaChatApi.CompletionsAsync(text);
-                currentRange.InsertAfter("\n" + response.choices[0].message.content);
+                currentRange.Text = response.choices[0].message.content;
             }
             else
             {
@@ -101,7 +96,7 @@ namespace GigachartAdd_in
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
             if (currentRange.StoryLength > 0 && secretKey != null)
             {
-                string text = "Продолжи этот текст: " + currentRange.Text;
+                string text = "Дополни этот текст: " + currentRange.Text;
                 var response = await gigaChatApi.CompletionsAsync(text);
                 currentRange.InsertAfter("\n" + response.choices[0].message.content);
             }

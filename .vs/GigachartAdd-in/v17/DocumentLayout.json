@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\gigachartadd-in\\ribbon2.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\ribbon2.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|c:\\users\\sergey\\source\\repos\\gigachartadd-in\\gigachartadd-in\\keyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\keyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|c:\\users\\sergey\\source\\repos\\gigachartadd-in\\gigachartadd-in\\ribbon2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\ribbon2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\gigachartadd-in\\gigachatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\gigachatclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\gigachartadd-in\\globalskey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\globalskey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\gigachartadd-in\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\gigachartadd-in\\keyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\keyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\gigachartadd-in\\gigachat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|c:\\users\\sergey\\source\\repos\\gigachartadd-in\\gigachartadd-in\\gigachat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\gigachat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|c:\\users\\sergey\\source\\repos\\gigachartadd-in\\gigachartadd-in\\ribbon2.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{07A55FC0-6801-4F64-A8A8-BE8C5AFF38E0}|GigachartAdd-in\\GigachartAdd-in.csproj|solutionrelative:gigachartadd-in\\ribbon2.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,79 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Ribbon2.xml",
               "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Ribbon2.xml",
               "RelativeDocumentMoniker": "GigachartAdd-in\\Ribbon2.xml",
               "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Ribbon2.xml",
               "RelativeToolTip": "GigachartAdd-in\\Ribbon2.xml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-05-05T10:44:41.098Z",
+              "WhenOpened": "2024-05-10T14:12:47.236Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Gigachat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Gigachat.cs",
-              "RelativeDocumentMoniker": "GigachartAdd-in\\Gigachat.cs",
-              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Gigachat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "GigachartAdd-in\\Gigachat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:38:52.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GigaChatClass.cs",
-              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\GigaChatClass.cs",
-              "RelativeDocumentMoniker": "GigachartAdd-in\\GigaChatClass.cs",
-              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\GigaChatClass.cs",
-              "RelativeToolTip": "GigachartAdd-in\\GigaChatClass.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:37:23.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GlobalsKey.cs",
-              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\GlobalsKey.cs",
-              "RelativeDocumentMoniker": "GigachartAdd-in\\GlobalsKey.cs",
-              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\GlobalsKey.cs",
-              "RelativeToolTip": "GigachartAdd-in\\GlobalsKey.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:20:21.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "KeyForm.cs",
-              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\KeyForm.cs",
-              "RelativeDocumentMoniker": "GigachartAdd-in\\KeyForm.cs",
-              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\KeyForm.cs",
-              "RelativeToolTip": "GigachartAdd-in\\KeyForm.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwCsAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T08:59:27.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ThisAddIn.cs",
-              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\ThisAddIn.cs",
-              "RelativeDocumentMoniker": "GigachartAdd-in\\ThisAddIn.cs",
-              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\ThisAddIn.cs",
-              "RelativeToolTip": "GigachartAdd-in\\ThisAddIn.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:55:36.236Z"
             },
             {
               "$type": "Document",
@@ -120,9 +50,35 @@
               "RelativeDocumentMoniker": "GigachartAdd-in\\Ribbon2.cs",
               "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Ribbon2.cs",
               "RelativeToolTip": "GigachartAdd-in\\Ribbon2.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAQwGYAAAANAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAQwDsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:21:53.277Z",
+              "WhenOpened": "2024-05-10T14:12:37.204Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gigachat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Gigachat.cs",
+              "RelativeDocumentMoniker": "GigachartAdd-in\\Gigachat.cs",
+              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\Gigachat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "GigachartAdd-in\\Gigachat.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T14:23:21.127Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KeyForm.cs",
+              "DocumentMoniker": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\KeyForm.cs",
+              "RelativeDocumentMoniker": "GigachartAdd-in\\KeyForm.cs",
+              "ToolTip": "C:\\Users\\Sergey\\source\\repos\\GigachartAdd-in\\GigachartAdd-in\\KeyForm.cs",
+              "RelativeToolTip": "GigachartAdd-in\\KeyForm.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA5wDQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T14:01:05.695Z",
               "EditorCaption": ""
             }
           ]

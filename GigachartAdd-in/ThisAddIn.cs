@@ -18,7 +18,7 @@ namespace GigachartAdd_in
         {
             if(GlobalsKey.secretKey == null)
             {
-                string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                string docPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
                 try
                 {
                     using StreamReader reader = new StreamReader(Path.Combine(docPath, "secretKey.txt"));
