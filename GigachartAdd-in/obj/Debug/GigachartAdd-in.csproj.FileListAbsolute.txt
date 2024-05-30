@@ -76,3 +76,4 @@ C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\System.Te
 C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\bin\Debug\System.Text.Encoding.CodePages.xml
 C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd_in.GigachatChatForm.resources
 C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd_in.KeyForm.resources
+C:\Users\Sergey\source\repos\GigachartAdd-in\GigachartAdd-in\obj\Debug\GigachartAdd_in.HelpForm.resources
