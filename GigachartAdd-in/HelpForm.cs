@@ -30,7 +30,7 @@ namespace GigachartAdd_in
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/DinDron/test/blob/main/README.md");
+            Process.Start("https://github.com/Enfariches/Gigachat_WordPlugin");
         }
     }
 }

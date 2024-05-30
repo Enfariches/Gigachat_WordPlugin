@@ -4,4 +4,5 @@ public static class GlobalsKey
 {
     public static string secretKey;
     public static GigaChatClass gigaChatApi;
+    public static bool firstMessage = true;
 }
