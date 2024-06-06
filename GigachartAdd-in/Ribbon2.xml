@@ -2,12 +2,12 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
 	<contextMenus>
 		<contextMenu idMso="ContextMenuText">
-			<menu id="MySubMenu" label="Gigachat" >
-				<button id="MyButton1" label="Чат" insertBeforeMso="HyperlinkInsert" onAction="GetButton" />
-				<button id="MyButton2" label="Вывод" insertBeforeMso="HyperlinkInsert" onAction="GetButtonConclusion" />
-				<button id="MyButton3" label="Сократить" insertBeforeMso="HyperlinkInsert" onAction="GetButtonReduce" />
-				<button id="MyButton4" label="Продолжить" insertBeforeMso="HyperlinkInsert" onAction="GetButtonContinue" />
-				<button id="MyButton5" label="Вставить ключ GigaChat" insertBeforeMso="HyperlinkInsert" onAction="GetButtonKey" />
+			<menu id="MySubMenu" label="Gigachat" getImage="getIcon" >
+				<button id="MyButton1" label="Чат" insertBeforeMso="HyperlinkInsert" onAction="GetButton" getImage="getIcon" />
+				<button id="MyButton2" label="Вывод по тексту" insertBeforeMso="HyperlinkInsert" onAction="GetButtonConclusion" getImage="getIcon" />
+				<button id="MyButton3" label="Сократить текст" insertBeforeMso="HyperlinkInsert" onAction="GetButtonReduce" getImage="getIcon" />
+				<button id="MyButton4" label="Продолжить текст" insertBeforeMso="HyperlinkInsert" onAction="GetButtonContinue" getImage="getIcon" />
+				<button id="MyButton5" label="Вставить ключ Gigachat" insertBeforeMso="HyperlinkInsert" onAction="GetButtonKey" getImage="getIcon" />
 			</menu>
 		</contextMenu>
 	</contextMenus>

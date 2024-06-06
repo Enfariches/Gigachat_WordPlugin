@@ -3,6 +3,7 @@ using static GlobalsKey;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Word;
 using System.IO.Pipes;
+using System.Drawing;
 
 namespace GigachartAdd_in
 {
@@ -44,8 +45,9 @@ namespace GigachartAdd_in
         }
         private async void button1_Click(object sender, EventArgs e)
         {
-            TextBox textBoxChat = (TextBox)Controls.Find("textBox1", true)[0];     
+            TextBox textBoxChat = (TextBox)Controls.Find("textBox1", true)[0];
             string text = textBoxChat.Text;
+            textBoxChat.Clear();
 
             if (firstMessage)
             {
@@ -57,8 +59,23 @@ namespace GigachartAdd_in
                 dialogBox.SelectedText = "\r\n" + "> " + text;
             }
 
+            dialogBox.SelectionColor = Color.Green;
             var response = await gigaChatApi.CompletionsAsync(text);
-            dialogBox.BeginInvoke(new Action(() => { dialogBox.AppendText("\r\n" + "> " + response.choices[0].message.content); }));
+
+            dialogBox.BeginInvoke(new Action(() =>
+            {
+                try
+                {
+                    dialogBox.AppendText("\r\n" + "> " + response.choices[0].message.content);
+                    dialogBox.SelectionColor = Color.Black;
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка");
+                }
+                            
+            }));
+            
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -66,7 +83,7 @@ namespace GigachartAdd_in
 
         private void dialogBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
@@ -76,6 +93,25 @@ namespace GigachartAdd_in
 
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                MessageBox.Show("Неа");
+            }
+        }
+
+        private void textBox1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                button1_Click(this, new EventArgs());
+            }
+        }
     }
 }

@@ -14,7 +14,8 @@ namespace GigachartAdd_in
         public KeyForm()
         {
             InitializeComponent();
-  
+            textBoxKey.Text = secretKey;
+
         }
 
         async private void button1_Click(object sender, EventArgs e)
@@ -23,23 +24,28 @@ namespace GigachartAdd_in
             secretKey = textBoxChat.Text;
 
             gigaChatApi = new GigaChatClass(secretKey);
-            var response = await gigaChatApi.CompletionsAsync("");
-
-            if (response != null)
+            try
             {
-                string docPath =
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-
-                using StreamWriter outfile = new StreamWriter(Path.Combine(docPath, "secretKey.txt"));
-                outfile.Write(secretKey);
-                MessageBox.Show("secretKey.txt успешно сохранен в " + docPath);
+                var response = await gigaChatApi.CompletionsAsync("");
+                if (response != null)
+                {
+                    string docPath =
+                    Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                    
+                    using StreamWriter outfile = new StreamWriter(Path.Combine(docPath, "secretKey.txt"));
+                    outfile.Write(secretKey);
+                    MessageBox.Show("secretKey.txt успешно сохранен в " + docPath);
+                }
+                else
+                {
+                    MessageBox.Show("Ключ не валидный");
+                }
             }
-
-            else
+            catch
             {
-                MessageBox.Show("Ключ не валидный");
+                MessageBox.Show("Ошибка");
             }
-
+            
         }
 
         private void textBoxKey_TextChanged(object sender, EventArgs e)

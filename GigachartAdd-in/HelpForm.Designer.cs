@@ -40,7 +40,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(638, 143);
+            this.label1.Size = new System.Drawing.Size(643, 143);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -76,8 +76,9 @@
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HelpForm";
-            this.Text = "HelpForm";
+            this.Text = "Как получить данные?";
             this.ResumeLayout(false);
             this.PerformLayout();
 

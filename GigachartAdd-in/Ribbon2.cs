@@ -7,6 +7,9 @@ using Office = Microsoft.Office.Core;
 using Microsoft.Office.Interop.Word;
 using static GlobalsKey;
 using static System.Net.Mime.MediaTypeNames;
+using GigachartAdd_in.Properties;
+using Microsoft.Office.Core;
+using System.Drawing;
 
 
 // TODO:  Выполните эти шаги, чтобы активировать элемент XML ленты:
@@ -64,11 +67,18 @@ namespace GigachartAdd_in
         public async void GetButtonConclusion(Office.IRibbonControl control)
         {
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength > 0 && secretKey != null)
+            if (currentRange.Text != null && secretKey != null)
             { 
-                    string text = "Сделай краткий вывод по этому тексту: " + currentRange.Text;
+                string text = "Сделай краткий вывод по этому тексту: " + currentRange.Text;
+                try
+                {
                     var response = await gigaChatApi.CompletionsAsync(text);
                     currentRange.Text = response.choices[0].message.content;
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка");
+                }
             }
             else
             {
@@ -79,11 +89,18 @@ namespace GigachartAdd_in
         public async void GetButtonReduce(Office.IRibbonControl control)
         {
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength > 0 && secretKey != null)
+            if (currentRange.Text != null && secretKey != null)
             {
                 string text = "Сократи этот текст: " + currentRange.Text;
-                var response = await gigaChatApi.CompletionsAsync(text);
-                currentRange.Text = response.choices[0].message.content;
+                try
+                {
+                    var response = await gigaChatApi.CompletionsAsync(text);
+                    currentRange.Text = response.choices[0].message.content;
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка");
+                }
             }
             else
             {
@@ -94,16 +111,28 @@ namespace GigachartAdd_in
         public async void GetButtonContinue(Office.IRibbonControl control)
         {
             Range currentRange = Globals.ThisAddIn.Application.Selection.Range;
-            if (currentRange.StoryLength > 0 && secretKey != null)
+            if (currentRange.Text != null && secretKey != null)
             {
                 string text = "Продолжи этот текст: " + currentRange.Text;
-                var response = await gigaChatApi.CompletionsAsync(text);
-                currentRange.Text = response.choices[0].message.content;
+                try
+                {
+                    var response = await gigaChatApi.CompletionsAsync(text);
+                    currentRange.Text = response.choices[0].message.content;
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка");
+                }
             }
             else
             {
                 MessageBox.Show("Выделенная область пуста или нет ключа Gigachat");
             }
+        }
+
+        public Bitmap getIcon(IRibbonControl control)
+        {
+            return Resources.icon.ToBitmap();
         }
 
 

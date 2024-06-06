@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeyForm));
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxKey = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Location = new System.Drawing.Point(562, 76);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 23);
@@ -80,17 +82,21 @@
             // 
             // KeyForm
             // 
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(745, 111);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxKey);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "KeyForm";
             this.helpProvider1.SetShowHelp(this, true);
-            this.Text = "Key";
+            this.Text = "Вставить ключ GigaChat";
             this.Load += new System.EventHandler(this.KeyForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
