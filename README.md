@@ -46,7 +46,7 @@
 
 
 ## Иллюстрации
-![video](![гиф](https://github.com/Enfariches/Gigachat_WordPlugin/assets/96489078/245e7364-4d0c-422c-96e3-a99b476e2c00))
+![video](![гиф](https://github.com/Enfariches/Gigachat_WordPlugin/assets/96489078/84dbcde2-1813-4b8c-8ce9-ac6dc9677182))
 ![UI](![WINWORD_1icOzYHYaE](https://github.com/Enfariches/Gigachat_WordPlugin/assets/96489078/b4cdcbe7-b136-4678-8be7-6e3f02516168))
 ![key enter](![WINWORD_wtNgPNZIKm](https://github.com/Enfariches/Gigachat_WordPlugin/assets/96489078/900bc8b4-a7b2-4eb1-befa-b75aa8b3fb21))
 ![plan](https://github.com/DinDron/test/blob/main/Рисунок2.png "Giga")
