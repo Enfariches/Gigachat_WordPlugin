@@ -46,7 +46,7 @@
 
 
 ## Иллюстрации
-![гиф]()
+![гиф](https://github.com/Enfariches/Gigachat_WordPlugin/blob/main/Видео.gif)
 ![UI](https://github.com/Enfariches/Gigachat_WordPlugin/blob/main/UI.png)
-![key enter](![WINWORD_wtNgPNZIKm](https://github.com/Enfariches/Gigachat_WordPlugin/assets/96489078/900bc8b4-a7b2-4eb1-befa-b75aa8b3fb21))
+![key enter](https://github.com/Enfariches/Gigachat_WordPlugin/blob/main/PasteKey.png)
 ![plan](https://github.com/DinDron/test/blob/main/Рисунок2.png "Giga")
